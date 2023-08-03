@@ -19,8 +19,7 @@ export function code3ToCode2(lang: string): string {
 }
 
 export function codeToLanguageName(lang: string): string {
-  const lang2 = code3ToCode2(lang)
-  return LANGUAGES_MAP_CODE2[lang2]?.name || lang
+  return LANGUAGES_MAP_CODE3[lang]?.name || lang
 }
 
 export function getPostLanguage(
